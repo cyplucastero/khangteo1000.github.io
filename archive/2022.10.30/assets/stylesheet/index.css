@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "JetBrains Mono Bold";
-    src: url('../fonts/JetBrainsMonoNL-Bold.woff2') format('woff2');
+    font-family: "Noto Sans Bold";
+    src: url('../fonts/NotoSans-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: "JetBrains Mono Regular";
-    src: url('../fonts/JetBrainsMonoNL-Regular.woff2') format('woff2');
+    font-family: "Noto Sans Regular";
+    src: url('../fonts/NotoSans-Regular.woff') format('woff');
 }
 
 * {
@@ -14,19 +14,19 @@
 
 body {
     overflow-x: hidden !important;
-    font-family: 'JetBrains Mono Regular', sans-serif;
+    font-family: 'Noto Sans Regular', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'JetBrains Mono Bold', sans-serif;
+    font-family: 'Noto Sans Bold', sans-serif;
 }
 
 .wrapper-image {
     width: 100%;
     height: 100%;
-    background-image: url(../image/wp9295928.png);
+    background-image: url(../image/XgCwWhw.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,7 +53,6 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
     font-size: 20px;
     text-shadow: 0px 0 10px #000;
-    padding: 20px;
 }
 
 .wrapper-image-background > img:nth-child(1) {
@@ -63,69 +62,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .wrapper-image-background > h1 {
-    font-size: 53px;
-    color: #ff0077;
-    animation: flicker 2s linear infinite;
+    font-size: 50px;
 }
-
-@keyframes flicker {
-    0% {
-      opacity:0.1;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-    }
-    
-    2% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-    }
-    8% {
-      opacity:0.1;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-    }
-    9% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-    }
-    12% {
-      opacity:0.1;
-      text-shadow: 0px 0px rgba(242, 22, 22, 1);
-    }
-    20% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-    }
-    25% {
-      opacity:0.3;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-    }
-    30% {
-      opacity:1;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-    }
-    
-    70% {
-      opacity:0.7;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-    }
-    
-    72% {
-      opacity:0.2;
-      text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
-    }
-    
-    77% {
-      opacity:.9;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-    }
-    100% {
-      opacity:.9;
-      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-    }
-  }
 
 .wrapper-image-background > .description {
     margin-bottom: 2em;
-    font-size: 16px;
 }
 
 .wrapper-image-background > .description a {
@@ -158,7 +99,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 15px;
     margin: 0;
     text-shadow: none;
-    transition: ease .2s;
 }
 
 .wrapper-image-background .social-media a > i {
@@ -166,11 +106,30 @@ h1,h2,h3,h4,h5,h6 {
     text-shadow: none;
     color: #fff;
     margin: 0;
-    transition: ease .2s;
 }
 
-.wrapper-image-background .social-media a:hover > p, .wrapper-image-background .social-media a:hover > i {
-    text-shadow: 0px 0 20px rgba(255, 255, 255, 0.438);
+.wrapper-image-background .social-media a.facebook {
+    background-color: #006eff;
+}
+
+.wrapper-image-background .social-media a.youtube {
+    background-color: #ff0000;
+}
+
+.wrapper-image-background .social-media a.github {
+    background-color: #242424;
+}
+
+.wrapper-image-background .social-media a.facebook:hover {
+    background-color: #4998ff;
+}
+
+.wrapper-image-background .social-media a.youtube:hover {
+    background-color: #ff8282;
+}
+
+.wrapper-image-background .social-media a.github:hover {
+    background-color: #505050;
 }
 
 @media screen and (max-width: 600px) {
