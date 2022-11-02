@@ -1,11 +1,11 @@
 @font-face {
     font-family: "JetBrains Mono Bold";
-    src: url('../fonts/JetBrainsMonoNL-Bold.woff2') format('woff2');
+    src: url('../webfonts/JetBrainsMonoNL-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: "JetBrains Mono Regular";
-    src: url('../fonts/JetBrainsMonoNL-Regular.woff2') format('woff2');
+    src: url('../webfonts/JetBrainsMonoNL-Regular.woff2') format('woff2');
 }
 
 * {
@@ -171,6 +171,18 @@ h1,h2,h3,h4,h5,h6 {
 
 .wrapper-image-background .social-media a:hover > p, .wrapper-image-background .social-media a:hover > i {
     text-shadow: 0px 0 20px rgba(255, 255, 255, 0.438);
+}
+
+.wrapper-image-background .social-media a > i.fa-chevrons-right {
+    padding-right: 0;
+    padding-left: 10px;
+    transition: all .2s;
+    font-size: 16px;
+}
+
+.wrapper-image-background .social-media a:hover > i.fa-chevrons-right {
+  padding-right: 0;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 600px) {
